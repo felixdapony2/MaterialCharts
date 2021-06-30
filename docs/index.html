@@ -145,6 +145,7 @@
         };
         myChart = new Chart(ctx, config);
         createMaterialList();
+        update("Tensile Strength (MPa)", 0);
         //console.log(myChart.config.data.datasets[0]);
     }
     function update(statType, suggestMax) {
@@ -228,5 +229,5 @@
                 updateFocus([e.target.innerHTML]);
             }
         });
-    update("Tensile Strength (MPa)", 0)
+    
 </script>
