@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-12 text-center">
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -22,33 +22,39 @@
                 <ul id="materialList" class="dropdown-menu" aria-labelledby="dropdownMenuButton1"></ul>
             </div>
         </div>
+    </div> -->
+    <div class="col-md-12 text-center">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Show Material Comparison Chart
+        </button>
     </div>
     <br />
-
-    <div class="row">
-        <div class="col-md-12 text-center">
-            Arrange By
-            <div class="btn-group">
-                <button type="button" class="btn btn-outline-primary" onclick='update("Tensile Strength (MPa)", 0)'>
-                    Ultimate Tensile Strength
-                </button>
-                <button type="button" class="btn btn-outline-primary" onclick='update("Elongation @ Break %", 30)'>
-                    Elongation @ Break (%)
-                </button>
-                <button type="button" class="btn btn-outline-primary"
-                    onclick='update("Impact Strength IZOD (notched) (kJ / m2)", 28)'>
-                    Impact Strength
-                </button>
-                <button type="button" class="btn btn-outline-primary" onclick='update("Density (g/cm3)", 0)'>
-                    Density
-                </button>
-                <button type="button" class="btn btn-outline-primary" onclick='update("HDT @ 1.8MPa", 0)'>
-                    Head Deflection Temp
-                </button>
+    <div class="chart-container collapse" id="collapseExample"
+        style="margin: auto; position: relative; height: 80vh; width: 80vw">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                Arrange By
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary" onclick='update("Tensile Strength (MPa)", 0)'>
+                        Ultimate Tensile Strength
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" onclick='update("Elongation @ Break %", 30)'>
+                        Elongation @ Break (%)
+                    </button>
+                    <button type="button" class="btn btn-outline-primary"
+                        onclick='update("Impact Strength IZOD (notched) (kJ / m2)", 28)'>
+                        Impact Strength
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" onclick='update("Density (g/cm3)", 0)'>
+                        Density
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" onclick='update("HDT @ 1.8MPa", 0)'>
+                        Head Deflection Temp
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="chart-container" style="margin: auto; position: relative; height: 80vh; width: 80vw">
         <canvas id="myChart"></canvas>
     </div>
 </body>
@@ -61,6 +67,7 @@
     d3.csv(
         "https://raw.githubusercontent.com/felixdapony2/MaterialCharts/main/BASF.csv"
     ).then(makeChart);
+
     function makeChart(data) {
         dataSet = data;
         var materialLabels = dataSet.map(function (d) {
@@ -144,10 +151,11 @@
             },
         };
         myChart = new Chart(ctx, config);
-        createMaterialList();
+        // createMaterialList();
         update("Tensile Strength (MPa)", 0);
         //console.log(myChart.config.data.datasets[0]);
     }
+
     function update(statType, suggestMax) {
         var currentLabels = dataSet.map(function (d) {
             return d["Material"];
@@ -229,5 +237,5 @@
                 updateFocus([e.target.innerHTML]);
             }
         });
-    
+
 </script>
