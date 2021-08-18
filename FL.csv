@@ -1,12 +1,12 @@
-Material,Tensile Strength (MPa),Elongation @ Break %,Impact Strength IZOD (notched) (J / m),HDT @ 0.45,HDT @ 1.8MPa
-Standard Resin,65,6.2,25,73.1,58.4
-Rigid 10k,65,1,18,218,65
-Rigid 4000,69,5.3,23,77,60
-Grey Pro,61,13,19,78,62
-Tough 2000,46,48,40,63,53
-Tough 1500,33,51,67,52,45
-Durable,28,55,114,41,0
-High Temp v2,49,2.3,17,238,101
-BioMed Clear,52,12,35,67,54
-BioMed Amber,73,12.3,28,78,65
-Draft v2,52,4,26,74,57
+﻿Material,Tensile Strength (MPa),Elongation @ Break %,Young's Modulus (GPa),Impact Strength IZOD (notched) (J / m),HDT @ 0.45,HDT @ 1.8MPa
+Standard Resin,65,6.2,2.8,25,73.1,58.4
+Rigid 10k,65,1,10,18,218,65
+Rigid 4000,69,5.3,4.1,23,77,60
+Grey Pro,61,13,2.6,19,78,62
+Tough 2000,46,48,2.2,40,63,53
+Tough 1500,33,51,1.5,67,52,45
+Durable,28,55,1,114,41,0
+High Temp v2,49,2.3,2.8,17,238,101
+BioMed Clear,52,12,2.08,35,67,54
+BioMed Amber,73,12.3,2.9,28,78,65
+Draft v2,52,4,1.7,26,74,57
