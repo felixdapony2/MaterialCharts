@@ -1,6 +1,6 @@
 ﻿Material,Tensile Strength (MPa),Elongation @ Break %,Impact Strength IZOD (notched) (kJ / m2),HDT @ 0.45,HDT @ 1.8MPa
 Standard Resin,65,6.2,25,73.1,58.4
-Rigid 10k UV,53,1,18,218,65
+Rigid 10k,53,1,18,218,65
 Rigid 4000,69,5.3,23,77,60
 Grey Pro,61,13,19,78,62
 Tough 2000,46,48,40,63,53
