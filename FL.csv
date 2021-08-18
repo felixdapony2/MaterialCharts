@@ -1,0 +1,12 @@
+﻿Material,Tensile Strength (MPa),Elongation @ Break %,Impact Strength IZOD (notched) (kJ / m2),HDT @ 0.45,HDT @ 1.8MPa
+Standard Resin,65,6.2,25,73.1,58.4
+Rigid 10k UV,53,1,18,218,65
+Rigid 4000,69,5.3,23,77,60
+Grey Pro,61,13,19,78,62
+Tough 2000,46,48,40,63,53
+Tough 1500,33,51,67,52,45
+Durable,28,55,114,41,0
+High Temp v2,49,2.3,17,238,101
+BioMed Clear,52,12,35,67,54
+BioMed Amber,73,12.3,28,78,65
+Draft v2,52,4,26,74,57
